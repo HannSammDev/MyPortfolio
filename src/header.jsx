@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+// import './App.css'
 // import { DarkThemeToggle } from 'flowbite-react'
 // import { DarkThemeToggle } from 'flowbite-react'
 
@@ -9,13 +9,13 @@ export const MainPage = () => {
   return (
     <>
       <header>
-        <nav class="fixed w-full z-20 top-0 start-0 bg-transparent border-b border-b-gray-500 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+        <nav class="fixed w-full z-20 top-0 start-0 bg-transparent border-b border-b-gray-500 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-transparent">
           <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="https://www.facebook.com/hannsamm.beleganio" class="flex items-center">
 
               <img class="w-10 h-10 mr-3 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src="./profile.jpg" alt="Bordered avatar" />
 
-              <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">HSDev</span>
+              <span class="self-center text-xl font-semibold whitespace-nowrap text-white dark:text-white">HSDev</span>
             </a>
             <div class="flex items-center lg:order-2">
               {/* <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a> */}
@@ -52,7 +52,6 @@ export const MainPage = () => {
               </ul>
             </div>
           </div>
-
         </nav>
         {/* <DarkThemeToggle/> */}
       </header>
