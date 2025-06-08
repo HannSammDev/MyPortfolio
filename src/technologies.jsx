@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import 'animate.css';
 import { useEffect } from "react";
 import { Card } from 'primereact/card';
-export const Test = () => {
+export const Technologies = () => {
     useEffect(() => {
         AOS.init({
             duration: 800
@@ -17,7 +17,7 @@ export const Test = () => {
             <div className="h-0">
 
             </div>
-            <div className="mb-96">
+            <div className="mb-10">
                 <div className="card border">
                     <Card
                         title={<span className="text-white text-2xl font-bold">TECHNOLOGIES</span>}
