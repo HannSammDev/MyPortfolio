@@ -1,107 +1,72 @@
-import React from "react";
-// import { Image } from 'primereact/image';
-import AOS from "aos";
-import 'aos/dist/aos.css';
-import 'animate.css';
-import { useEffect } from "react";
-import { Card } from 'primereact/card';
+import React from 'react';
+import { Divider } from 'primereact/divider';
+import { Button } from 'primereact/button';
+import { Tooltip } from 'primereact/tooltip';
+import { FaLinkedin, FaFacebookSquare } from 'react-icons/fa';
+import { BiLogoGmail } from 'react-icons/bi';
+
 export const Test = () => {
-    useEffect(() => {
-        AOS.init({
-            duration: 800
-            //   once: false, 
-        });
-    }, []);
-    return (
-        <>
-            <div className="h-0">
+  return (
+    <>
+      <Tooltip target=".social-btn" />
 
-            </div>
-            <div className="mb-96">
-                <div className="card border">
-                    <Card
-                        title={<span className="text-white text-2xl font-bold">TECHNOLOGIES</span>}
-                        className="border border-white m-5 p-5 bg-white/10 backdrop-blur-md dark:bg-gray-900/10 dark:backdrop-blur-md"
-                    >
-                        <div className="grid grid-cols-5 gap-4 mt-5">
-                            <img
-                                data-aos='fade-up'
-                                alt="HTML5"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                                className="w-10 h-10 border border-transparent hover:border-orange-500 hover:shadow-lg hover:shadow-orange-500/50 transform hover:scale-110 transition-transform duration-200"
-                            />
-                            <img
-                                data-aos='fade-up'
-                                alt="CSS3"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                                className="w-10 h-10 border border-transparent hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 transform hover:scale-110 transition-transform duration-200"
-                            />
-                            {/* <img
-                            data-aos='fade-up'
-                                alt="Tailwind CSS"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                                className="w-10 h-10 border border-transparent hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 transform hover:scale-110 transition-transform duration-200"
-                            /> */}
-                            <img
-                                data-aos='fade-up'
-                                alt="Bootstrap"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                                className="w-10 h-10 border border-transparent hover:border-violet-500 hover:shadow-lg hover:shadow-violet-500/50 transform hover:scale-110 transition-transform duration-200"
-                            />
-                            <img
-                                data-aos='fade-up'
-                                alt="JavaScript"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                className="w-10 h-10 border border-transparent hover:border-yellow-500 hover:shadow-lg hover:shadow-yellow-500/50 transform hover:scale-110 transition-transform duration-200"
-                            />
-                            <img
-                                data-aos='fade-up'
-                                alt="React"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                                className="w-10 h-10 border border-transparent hover:border-blue-300 hover:shadow-lg hover:shadow-blue-500/50 transform hover:scale-110 transition-transform duration-200"
-                            />
-                            <img
-                                data-aos='fade-up'
-                                alt="Firebase"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
-                                className="w-10 h-10 border border-transparent hover:border-yellow-500 hover:shadow-lg hover:shadow-yellow-500/50 transform hover:scale-110 transition-transform duration-200"
-                            />
-                            <img
-                                data-aos='fade-up'
-                                alt="Node.js"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                                className="w-10 h-10 border border-transparent hover:border-green-500 hover:shadow-lg hover:shadow-green-500/50 transform hover:scale-110 transition-transform duration-200"
-                            />
-                            <img
-                                data-aos='fade-up'
-                                alt="PHP"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                                className="w-10 h-10 border border-transparent hover:border-violet-500 hover:shadow-lg hover:shadow-violet-500/50 transform hover:scale-110 transition-transform duration-200"
-                            />
-                            <img
-                                data-aos='fade-up'
-                                alt="GitHub"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                className="w-10 h-10 border border-transparent hover:border-gray-950 hover:shadow-lg hover:shadow-dark transform hover:scale-110 transition-transform duration-200"
-                            />
-                            <img
-                                data-aos='fade-up'
-                                alt="Python"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                                className="w-10 h-10 border border-transparent hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 transform hover:scale-110 transition-transform duration-200"
-                            />
-                            <img
-                                data-aos='fade-up'
-                                alt="Git"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                                className="w-10 h-10 border border-transparent hover:border-orange-500 hover:shadow-lg hover:shadow-orange-500/50 transform hover:scale-110 transition-transform duration-200"
-                            />
+      <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-300 px-6 py-10">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+          {/* Branding */}
+          <div className="text-center md:text-left">
+            {/* Avatar or logo */}
+            <img
+              src="./profile.jpg"
+              alt="Profile"
+              className="w-14 h-14 rounded-full mx-auto md:mx-0 shadow-lg mb-2"
+            />
+            <h2 className="text-2xl font-bold text-white">Hann Samm A. Beleganio</h2>
+            <p className="text-sm text-gray-400 mt-1">Web Developer & Portfolio 2025</p>
+          </div>
 
-                        </div>
-                    </Card>
-                </div>
+          {/* Social Icons */}
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button
+              icon={<FaLinkedin size={20} />}
+              className="social-btn transition-transform hover:scale-110 p-button-rounded p-button-outlined border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white focus:ring-2 focus:ring-blue-300"
+              onClick={() => window.open('https://www.linkedin.com/in/your-username', '_blank')}
+              aria-label="LinkedIn"
+              tooltip="LinkedIn"
+            />
+            <Button
+              icon={<FaFacebookSquare size={20} />}
+              className="social-btn transition-transform hover:scale-110 p-button-rounded p-button-outlined border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white focus:ring-2 focus:ring-blue-200"
+              onClick={() => window.open('https://www.facebook.com/your-username', '_blank')}
+              aria-label="Facebook"
+              tooltip="Facebook"
+            />
+            <Button
+              icon={<BiLogoGmail size={20} />}
+              className="social-btn transition-transform hover:scale-110 p-button-rounded p-button-outlined border-red-500 text-red-500 hover:bg-red-500 hover:text-white focus:ring-2 focus:ring-red-300"
+              onClick={() => (window.location = 'mailto:hannsammbeleganio@gmail.com')}
+              aria-label="Email"
+              tooltip="Email Me"
+            />
+          </div>
+        </div>
 
-            </div>
-        </>
-    )
-}
+        <Divider className="my-8 border-t border-gray-700" />
+
+        {/* Bottom Text */}
+        <p className="text-center text-sm text-gray-500">
+          &copy; {new Date().getFullYear()} HSDev. All rights reserved.
+        </p>
+
+        {/* Scroll to top (optional) */}
+        <div className="text-center mt-4">
+          <Button
+            label="Back to Top"
+            icon="pi pi-arrow-up"
+            className="p-button-text text-sm text-gray-400 hover:text-white transition"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          />
+        </div>
+      </footer>
+    </>
+  );
+};
