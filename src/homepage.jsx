@@ -14,7 +14,7 @@ export const Home = () => {
     }, [])
     return (
         <>
-            <div id="home" className="h-30">
+            <div id="home" className="scroll-smooth h-30">
 
             </div>
             <div className="flex flex-col-reverse md:flex-row items-center justify-evenly gap-2 p-4">
