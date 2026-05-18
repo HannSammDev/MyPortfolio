@@ -34,17 +34,17 @@ export const Project = () => {
                     </figure>
 
                 </div>
-                {/* <div className="transition-transform duration-300 transform hover:scale-110 text-center md:text-left max-w-md">
+                <div className="transition-transform duration-300 transform hover:scale-110 text-center md:text-left max-w-md">
                     <figure data-aos='zoom-in-up' className="relative max-w-sm flex justify-center transition-all duration-300 cursor-pointer ">
                         <a href="#project">
-                            <Image imageClassName="rounded-lg" preview src="./pro.png" alt="image description" />
+                            <Image imageClassName="rounded-lg" preview src="./demprint.png" alt="image description" />
                         </a>
                         <figcaption className="absolute px-4 text-lg text-black bottom-6">
-                            <p className="text-black dark:text-white">Bluewaves Web-Portal</p>
+                            <p className="text-black dark:text-white font-bold">Demprint Management System</p>
                         </figcaption>
                     </figure>
                 </div>
-                <div className="transition-transform duration-300 transform hover:scale-110 text-center md:text-left max-w-md">
+                {/* <div className="transition-transform duration-300 transform hover:scale-110 text-center md:text-left max-w-md">
                     <figure data-aos='zoom-in-up' className="relative max-w-sm flex justify-center transition-all duration-300 cursor-pointer  ">
                         <a href="#project">
                             <Image imageClassName="rounded-lg" preview src="./pro.png" alt="image description" />
