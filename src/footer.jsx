@@ -53,12 +53,12 @@ export const Footer = () => {
           &copy; {new Date().getFullYear()} HSDev. All rights reserved.
         </p>
         <div className="text-center mt-4">
-          <Button
+          {/* <Button
             label="Back to Top"
             icon="pi pi-arrow-up"
             className="p-button-text text-sm text-gray-400 hover:text-white transition"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          />
+          /> */}
         </div>
       </footer>
     </>
