@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 export const MainPage = () => {
   const [navWhite, setNavWhite] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // ✅ mobile menu state
 
   useEffect(() => {
     const handleScroll = () => {
@@ -10,7 +11,6 @@ export const MainPage = () => {
       if (projectSection) {
         const rect = projectSection.getBoundingClientRect();
 
-        // kapag nasa project section
         if (rect.top <= 100 && rect.bottom >= 100) {
           setNavWhite(true);
         } else {
@@ -20,7 +20,6 @@ export const MainPage = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -47,19 +46,9 @@ export const MainPage = () => {
         >
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             {/* LOGO */}
-            <a
-              href="https://www.facebook.com/hannsamm.beleganio"
-              // Changed 'flex items-center' to 'flex flex-col items-center'
-              className="flex flex-col items-center"
-            >
-              {/* <img
-    className="w-10 h-10 mr-3 p-1 rounded-full ring-2 ring-gray-300"
-    src="./profile.jpg"
-    alt="Profile"
-  /> */}
-
+            <a href="#home" className="flex flex-col items-start">
               <span
-                className={`self-start text-xl font-semibold whitespace-nowrap transition-all duration-300 ${
+                className={`text-xl font-semibold transition-all duration-300 ${
                   navWhite ? "text-black" : "text-blue-400"
                 }`}
               >
@@ -67,7 +56,7 @@ export const MainPage = () => {
               </span>
 
               <span
-                className={`self-start text-sm font-semibold whitespace-nowrap transition-all duration-300 ${
+                className={`text-sm font-semibold transition-all duration-300 ${
                   navWhite ? "text-black" : "text-white"
                 }`}
               >
@@ -79,6 +68,7 @@ export const MainPage = () => {
             <div className="flex items-center lg:order-2">
               <button
                 type="button"
+                onClick={() => setIsOpen(!isOpen)} // ✅ toggle
                 className={`inline-flex items-center p-2 ml-1 text-sm rounded-lg lg:hidden ${
                   navWhite
                     ? "text-black hover:bg-gray-200"
@@ -102,7 +92,11 @@ export const MainPage = () => {
             </div>
 
             {/* NAV LINKS */}
-            <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1">
+            <div
+              className={`${
+                isOpen ? "block" : "hidden"
+              } w-full lg:flex lg:w-auto lg:order-1`}
+            >
               <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                 {[
                   { href: "#home", label: "Home" },
@@ -113,6 +107,7 @@ export const MainPage = () => {
                   <li key={item.href}>
                     <a
                       href={item.href}
+                      onClick={() => setIsOpen(false)} // ✅ auto close
                       className={`block py-2 pr-4 pl-3 transition-all duration-300 ${
                         navWhite
                           ? "text-black hover:text-blue-700"
@@ -127,6 +122,7 @@ export const MainPage = () => {
                 <li>
                   <a
                     href="/resume.pdf"
+                    onClick={() => setIsOpen(false)}
                     className={`block py-2 pr-4 pl-3 transition-all duration-300 ${
                       navWhite
                         ? "text-black hover:text-blue-700"
@@ -144,4 +140,3 @@ export const MainPage = () => {
     </>
   );
 };
- 
