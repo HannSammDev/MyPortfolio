@@ -7,18 +7,18 @@ export const About = () => {
 
             </div>
             <div id="about" className="flex items-center mb-6">
-                <div className="flex-grow border-t border-white"></div>
-                <h2  className="mx-4 font-bold text-4xl text-white whitespace-nowrap">About</h2>
-                <div className="flex-grow border-t border-white"></div>
+                <div className="flex-grow border-t border-blue-600"></div>
+                <h2  className="mx-4 font-bold text-4xl text-blue-800 whitespace-nowrap">About</h2>
+                <div className="flex-grow border-t border-blue-600"></div>
             </div>
             <section className="bg-white/10 backdrop-blur-md dark:bg-gray-900/10 dark:backdrop-blur-md">
                 <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-lg xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
                     <Image  width="400" imageClassName="rounded-3xl ring-2 ring-gray-300 dark:ring-gray-500" src="./grad.jpg" alt="dashboard image" preview />
                     <div className="mt-4 md:mt-0">
-                        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-50 dark:text-white">
+                        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-blue-950 dark:text-black">
                             Web Developer – Frontend & Full Stack Solutions
                         </h2>
-                        <p className="text-justify mb-6 font-light text-gray-50 md:text-lg dark:text-gray-400">
+                        <p className="text-justify mb-6 font-light text-gray md:text-lg dark:text-gray-400">
                             Hi there! I’m a passionate web developer who loves creating clean, fast, and responsive websites and applications. Whether it's designing user interfaces or building out features behind the scenes, I enjoy turning ideas into real, working products.
                             <br /><br />
                             From planning and prototyping to coding and deployment, I take pride in delivering high-quality solutions that are both functional and user-friendly.
@@ -27,7 +27,7 @@ export const About = () => {
                         </p>
                         <a
                             href="#contact"
-                            className="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
+                            className="inline-flex items-center text-black bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
                         >
                             Get started
                             <svg

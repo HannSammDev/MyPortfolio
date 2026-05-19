@@ -9,18 +9,25 @@ import {ScrollTop} from 'primereact/scrolltop'
 import { Footer } from "./footer";
 export const Layout = () => {
     return (
-        <>
-            <ScrollTop className="d-flex justify-center align-center bg-blue-500 text-white rounded-full shadow-lg" style={{
-                width: '2.5rem', height: '2.5rem', backgroundColor:'blue', display:'flex',alignItems:'center', justifyItems:'center'
-            }} />
-            <MainPage />
-            <Home />
-            <About />
-            <Project />
-            <Technologies />
-            <Footer/>
-            {/* <Test /> */}
-
-        </>
-    )
+      <>
+        <ScrollTop
+          className="d-flex justify-center align-center bg-blue-500 text-white rounded-full shadow-lg"
+          style={{
+            width: "2.5rem",
+            height: "2.5rem",
+            backgroundColor: "blue",
+            display: "flex",
+            alignItems: "center",
+            justifyItems: "center",
+          }}
+        />
+        <MainPage />
+        <Home />
+        <Technologies />
+        <Project />
+        <About />
+        <Footer />
+        {/* <Test /> */}
+      </>
+    );
 }
