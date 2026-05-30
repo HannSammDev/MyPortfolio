@@ -2,85 +2,116 @@ import React from "react";
 import { Image } from "primereact/image";
 import AOS from "aos";
 import { useEffect } from "react";
-import { CiLinkedin } from "react-icons/ci";
 import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
+
 export const Home = () => {
   useEffect(() => {
     AOS.init({
       duration: 800,
     });
   }, []);
+
   return (
-    //   {/* <div id="home" className="scroll-smooth h-30">
-
-    //         </div> */}
-    <div
+    <section
+      id="home"
+      className="min-h-screen bg-slate-950 text-white"
       style={{
-        width: "100%",
-        minHeight: "100vh",
-
         background: `
-          radial-gradient(circle at top left, rgba(0, 140, 255, 0.15), transparent 30%),
-          radial-gradient(circle at bottom right, rgba(180, 0, 255, 0.18), transparent 35%),
-          linear-gradient(135deg, #081229 0%, #162a6c 45%, #2a3fa3 100%)
-        `,
-
-        backgroundAttachment: "fixed",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
+          radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 28%),
+          radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.16), transparent 32%),
+          linear-gradient(135deg, #020617 0%, #152236 45%, #1f3b80 100%)`,
       }}
     >
-      <div id="home" className="scroll-smooth h-30"></div>
-      <div className="flex flex-col-reverse md:flex-row items-center justify-evenly gap-2 ">
-        <div data-aos="fade-up" className="text-center md:text-left max-w-md">
-          <h1 className="block text-4xl text-gray-200 font-semibold mb-4">
-            Hi, I'm <strong className="text-blue-300 font-bold">Sam</strong>,
-          </h1>
-          <p className="block text-justify text-xl text-gray-200 font-light leading-relaxed mb-4">
-            A <span className="font-medium text-blue-300">web developer</span>{" "}
-            who can provide website solutions for your{" "}
-            <span className="italic">business</span>,{" "}
-            <span className="italic">school projects</span>, or{" "}
-            <span className="italic">capstone</span>.
-          </p>
-          <div className="flex justify-center md:justify-start items-center space-x-4">
-            <a
-              href="https://www.linkedin.com/in/beleganio-hann-samm-a-22925b36a/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-blue-600 text-blue-600 hover:text-white hover:bg-blue-600 transition-all duration-200 rounded-full p-2"
-            >
-              <FaLinkedin className="text-2xl" />
-            </a>
-            <a
-              href="https://www.facebook.com/hannsamm.beleganio"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-blue-500 text-blue-500 hover:text-white hover:bg-blue-500 transition-all duration-200 rounded-full p-2"
-            >
-              <FaFacebookSquare className="text-2xl" />
-            </a>
-            <a
-              href="mailto:hannsammbeleganio@gmail.com"
-              className="border border-red-500 text-red-500 hover:text-white hover:bg-red-500 transition-all duration-200 rounded-full p-2"
-            >
-              <BiLogoGmail className="text-2xl" />
-            </a>
+      <div className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-4 py-10 lg:px-8">
+        <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
+          <div
+            data-aos="fade-left"
+            className="order-1 lg:order-2 relative mx-auto flex w-full max-w-md items-center justify-center"
+          >
+            <div className="absolute -left-8 top-4 h-40 w-40 rounded-full bg-sky-500/10 blur-3xl" />
+            <div className="absolute -right-6 bottom-8 h-44 w-44 rounded-full bg-fuchsia-500/10 blur-3xl" />
+            <div className="relative overflow-hidden rounded-[2rem] border border-slate-700 bg-slate-950/80 p-4 sm:p-6 shadow-2xl shadow-slate-950/40">
+              <div className="relative mx-auto h-[260px] w-[260px] overflow-hidden rounded-full border-4 border-slate-800 bg-slate-900 shadow-xl shadow-sky-500/20 sm:h-80 sm:w-80">
+                <Image
+                  src="./profile.jpg"
+                  alt="Profile photo of Sam"
+                  preview
+                  width="320"
+                  imageClassName="h-full w-full object-cover"
+                />
+              </div>
+              <div className="mt-6 rounded-3xl bg-slate-900/80 p-4 text-center shadow-inner shadow-slate-950/50 sm:px-5 sm:py-5">
+                <p className="text-sm uppercase tracking-[0.3em] text-slate-400">
+                  Web Developer
+                </p>
+                <p className="mt-3 text-lg font-semibold text-slate-100">
+                  React · Tailwind · Firebase
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="flex justify-center">
-          <div className="card transform hover:scale-110 transition-transform duration-300">
-            <Image
-              src="./profile.jpg"
-              alt="Image"
-              width="250"
-              preview
-              imageClassName="rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-            />
+
+          <div
+            data-aos="fade-right"
+            className="order-2 lg:order-1 space-y-6 text-center lg:text-left"
+          >
+            <div className="inline-flex items-center justify-center gap-3 rounded-full bg-white/10 px-4 py-2 text-sm text-sky-200 shadow-sm shadow-sky-500/10 lg:justify-start">
+              <span className="h-1.5 w-12 rounded-full bg-sky-400"></span>
+              <span>Web Development • React • Tailwind • Firebase</span>
+            </div>
+            <div>
+              <h1 className="text-4xl font-semibold text-slate-100 sm:text-5xl">
+                Hi, I'm <span className="text-sky-300">Sam</span>
+              </h1>
+              <p className="mt-4 max-w-xl text-lg leading-8 text-slate-300 sm:text-xl">
+                I build clean, modern websites with powerful front-end
+                experiences using React, Tailwind, and Firebase.
+              </p>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3">
+              {[
+                "ReactJS",
+                "Tailwind",
+                "Firebase",
+                "JavaScript",
+                "UI Design",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded-2xl border border-slate-700 bg-slate-900/70 px-4 py-2 text-sm text-slate-200 shadow-sm shadow-slate-900/50"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-4 lg:justify-start">
+              <a
+                href="https://www.linkedin.com/in/beleganio-hann-samm-a-22925b36a/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-sky-500 bg-slate-900/40 text-sky-300 transition hover:border-sky-300 hover:bg-sky-500 hover:text-white"
+              >
+                <FaLinkedin className="text-2xl" />
+              </a>
+              <a
+                href="https://www.facebook.com/hannsamm.beleganio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-slate-600 bg-slate-900/40 text-slate-300 transition hover:border-blue-500 hover:bg-blue-500 hover:text-white"
+              >
+                <FaFacebookSquare className="text-2xl" />
+              </a>
+              <a
+                href="mailto:hannsammbeleganio@gmail.com"
+                className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-rose-500 bg-slate-900/40 text-rose-300 transition hover:border-rose-400 hover:bg-rose-500 hover:text-white"
+              >
+                <BiLogoGmail className="text-2xl" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -1,21 +1,23 @@
-import React from 'react'
-import * as ReactDOM from 'react-dom/client' // ← this is required
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import './index.css'
-import 'flowbite';
-import { Layout } from './layout';
-
+import React from "react";
+import * as ReactDOM from "react-dom/client"; // ← this is required
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./index.css";
+import "flowbite";
+import "primereact/resources/themes/lara-light-cyan/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
+import { Layout } from "./layout";
 
 const App = () => (
   <Router>
     <Routes>
-      <Route path='/' element={<Layout/>} />
+      <Route path="/" element={<Layout />} />
     </Routes>
   </Router>
 );
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
