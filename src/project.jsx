@@ -11,14 +11,24 @@ const projectData = [
   {
     title: "Demprint's ERP",
     image: "./demprint.png",
-    description: "A custom ERP dashboard built for internal business operations with responsive UI and modular components.",
+    description:
+      "A custom ERP dashboard built for internal business operations with responsive UI and modular components.",
     tech: ["ReactJS", "JavaScript", "Tailwind", "Firebase", "Ant Design Icons"],
     liveUrl: "#",
   },
   {
     title: "Bluewaves Web Portal",
     image: "./project.png",
-    description: "A polished client-facing portal that showcases services and helps users quickly connect with the business.",
+    description:
+      "A polished client-facing portal that showcases services and helps users quickly connect with the business.",
+    tech: ["ReactJS", "JavaScript", "Tailwind", "Firebase", "Ant Design Icons"],
+    liveUrl: "#",
+  },
+  {
+    title: " Webase Task Manager",
+    image: "./taskM.png",
+    description:
+      "A task management application designed to help teams organize and track their work efficiently.",
     tech: ["ReactJS", "JavaScript", "Tailwind", "Firebase", "Ant Design Icons"],
     liveUrl: "#",
   },
@@ -76,10 +86,11 @@ export const Project = () => {
               }
               header={
                 <Image
+                  className="rounded-t-3xl object-cover h-52 w-full"
                   preview
                   alt={project.title}
                   src={project.image}
-                  imageClassName="rounded-t-3xl object-cover h-52 w-full"
+                  imageClassName="   object-cover h-52 w-full"
                 />
               }
             >
