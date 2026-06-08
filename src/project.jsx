@@ -9,6 +9,20 @@ import { Card } from 'primereact/card';
 
 const projectData = [
   {
+    title: "Bluewaves Web Portal",
+    image: "./project.png",
+    description:
+      "A polished client-facing portal that showcases services and helps users quickly connect with the business.",
+    tech: [
+      "ReactJS",
+      "JavaScript",
+      "Bootstrap",
+      "Firebase",
+      "Ant Design Icons",
+    ],
+    liveUrl: "#",
+  },
+  {
     title: "Demprint's ERP",
     image: "./demprint.png",
     description:
@@ -17,15 +31,7 @@ const projectData = [
     liveUrl: "#",
   },
   {
-    title: "Bluewaves Web Portal",
-    image: "./project.png",
-    description:
-      "A polished client-facing portal that showcases services and helps users quickly connect with the business.",
-    tech: ["ReactJS", "JavaScript", "Tailwind", "Firebase", "Ant Design Icons"],
-    liveUrl: "#",
-  },
-  {
-    title: " Webase Task Manager",
+    title: " Web-based Task Manager",
     image: "./taskM.png",
     description:
       "A task management application designed to help teams organize and track their work efficiently.",
@@ -66,11 +72,11 @@ export const Project = () => {
           ))}
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {projectData.map((project) => (
             <Card
               key={project.title}
-              className="overflow-hidden rounded-3xl border border-slate-200 bg-white/80 shadow-xl transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl dark:border-slate-700 dark:bg-slate-900/90"
+              className="overflow-hidden rounded-3xl border border-slate-200 bg-white/80 shadow-xl transition-transform duration-300 hover:-translate-y-1  hover:shadow-2xl dark:border-slate-700 dark:bg-slate-900/90"
               data-aos="zoom-in-up"
               title={project.title}
               footer={
