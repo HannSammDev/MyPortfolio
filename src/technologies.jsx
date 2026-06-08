@@ -82,8 +82,8 @@ export const Technologies = () => {
           </p>
         </div>
 
-        <Card className="border border-slate-200 bg-white/90 p-6 shadow-xl shadow-slate-200/40 backdrop-blur-md dark:border-slate-700 dark:bg-slate-900/80 dark:shadow-none">
-          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <Card className="border  border-slate-200 bg-white/90 p-6 shadow-xl shadow-slate-200/40 backdrop-blur-md dark:border-slate-700 dark:bg-slate-900/80 dark:shadow-none">
+          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
             {technologyList.map((tech) => (
               <div
                 key={tech.label}
