@@ -13,30 +13,28 @@ const projectData = [
     image: "./project.png",
     description:
       "A polished client-facing portal that showcases services and helps users quickly connect with the business.",
-    tech: [
-      "ReactJS",
-      "JavaScript",
-      "Bootstrap",
-      "Firebase",
-      "Ant Design Icons",
-    ],
+    tech: ["ReactJS", "JavaScript", "Bootstrap", "FontAwesome", "Firebase"],
     liveUrl: "#",
+        built:'React + Boatstrap'
   },
   {
     title: "Demprint's ERP",
     image: "./demprint.png",
     description:
       "A custom ERP dashboard built for internal business operations with responsive UI and modular components.",
-    tech: ["ReactJS", "JavaScript", "Tailwind", "Firebase", "Ant Design Icons"],
+    tech: ["NextJS", "JavaScript", "Tailwind", "MongoDB", "Ant Design Icons"],
     liveUrl: "#",
+    built:'Next + Tailwind'
   },
   {
     title: " Web-based Task Manager",
     image: "./taskM.png",
     description:
       "A task management application designed to help teams organize and track their work efficiently.",
-    tech: ["ReactJS", "JavaScript", "Tailwind", "Firebase", "Ant Design Icons"],
+    tech: ["ReactJS", "JavaScript", "Tailwind","ReactIcons" ,"Firebase"],
     liveUrl: "#",
+    built:'React + Tailwind'
+
   },
 ];
 
@@ -87,7 +85,7 @@ export const Project = () => {
                     label="View Live"
                     onClick={() => window.open(project.liveUrl, '_blank')}
                   />
-                  <span className="text-xs text-slate-500 dark:text-slate-400">Built with React + Tailwind</span>
+                  <span className="text-xs text-slate-500 dark:text-slate-400">Built with {project.built} </span>
                 </div>
               }
               header={

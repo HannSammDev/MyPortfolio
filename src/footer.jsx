@@ -12,7 +12,7 @@ export const Footer = () => {
       <footer className="bg-gradient-to-r from-gray-950 via-gray-900 to-gray-900 text-gray-300 px-6 py-10">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
          
-          <div className="text-center md:text-left">         
+          {/* <div className="text-center md:text-left">         
             <img
               src="./profile.jpg"
               alt="Profile"
@@ -20,11 +20,11 @@ export const Footer = () => {
             />
             <h2 className="text-2xl font-bold text-white">Hann Samm A. Beleganio</h2>
             <p className="text-sm text-gray-400 mt-1">Web Developer & Portfolio 2025</p>
-          </div>
+          </div> */}
           <div className="flex flex-wrap justify-center gap-4">
             <Button
               icon={<FaLinkedin size={20} />}
-              className="social-btn transition-transform hover:scale-110 p-button-rounded p-button-outlined border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white focus:ring-2 focus:ring-blue-300 rounded-full p-1"
+              className="social-btn transition-transform hover:scale-110  p-button-rounded p-button-outlined border-blue-500 text-blue-500 hover hover:bg-blue-500 hover:text-white focus:ring-2 focus:ring-blue-300 rounded-full p-1"
               onClick={() => window.open('https://www.linkedin.com/in/your-username', '_blank')}
               aria-label="LinkedIn"
               // tooltip="LinkedIn"
