@@ -66,36 +66,44 @@ export const Technologies = () => {
   }, []);
 
   return (
-    <section id="technologies" className="relative z-10 px-4 py-10 lg:px-8">
+    <section
+      id="technologies"
+      className="relative z-10 px-4 py-10 lg:px-8"
+      style={{ backgroundColor: "#0a1628" }}
+    >
       <div className="max-w-6xl mx-auto">
         <div className="mb-8 text-center">
           <div className="inline-flex items-center justify-center gap-3 mb-4">
             <span className="h-1.5 w-20 rounded-full bg-sky-500"></span>
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+            <h2 className="text-3xl font-bold text-white">
               Technologies I Use
             </h2>
             <span className="h-1.5 w-20 rounded-full bg-sky-500"></span>
           </div>
-          <p className="mx-auto max-w-2xl text-sm text-slate-600 dark:text-slate-300">
+          <p className="mx-auto max-w-2xl text-sm text-slate-300">
             I build modern user experiences with React, Tailwind, Firebase, and
             polished icon systems like Ant Design.
           </p>
         </div>
 
-        <Card className="border  border-slate-200 bg-white/90 p-6 shadow-xl shadow-slate-200/40 backdrop-blur-md dark:border-slate-700 dark:bg-slate-900/80 dark:shadow-none">
+        <Card
+          className="border border-slate-700 p-6 shadow-xl backdrop-blur-md"
+          style={{ backgroundColor: "#0d1f3c" }}
+        >
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
             {technologyList.map((tech) => (
               <div
                 key={tech.label}
                 data-aos="fade-up"
-                className="group rounded-3xl border border-slate-200 bg-slate-50 px-5 py-7 text-center transition duration-300 hover:-translate-y-1 hover:border-sky-400 hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-950/80 dark:hover:border-sky-500 dark:hover:bg-slate-900"
+                className="group rounded-3xl border border-slate-700 px-5 py-7 text-center transition duration-300 hover:-translate-y-1 hover:border-sky-500"
+                style={{ backgroundColor: "#112240" }}
               >
                 <img
                   alt={`${tech.label} logo`}
                   src={tech.src}
                   className="mx-auto mb-4 h-12 w-12 object-contain transition duration-300 group-hover:scale-110"
                 />
-                <p className="text-sm font-semibold text-slate-800 dark:text-slate-100">
+                <p className="text-sm font-semibold text-slate-100">
                   {tech.label}
                 </p>
               </div>

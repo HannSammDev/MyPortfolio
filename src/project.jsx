@@ -28,7 +28,7 @@ const projectData = [
   },
   {
     title: " Web-based Task Manager",
-    image: "./taskM.png",
+    image: "./taskf.png",
     description:
       "A task management application designed to help teams organize and track their work efficiently.",
     tech: ["ReactJS", "JavaScript", "Tailwind","ReactIcons" ,"Firebase"],
@@ -46,24 +46,35 @@ export const Project = () => {
   }, []);
 
   return (
-    <section className="px-4 py-8 lg:px-8" id="project">
+    <section
+      className="px-4 py-8 lg:px-8"
+      id="project"
+      style={{ backgroundColor: "#0a0f2c" }}
+    >
       <div className="max-w-6xl mx-auto">
         <div className="mb-6 text-center">
           <div className="inline-flex items-center gap-3 mb-4">
-            <span className="h-1 w-16 rounded-full bg-blue-600"></span>
-            <h2 className="text-4xl font-bold text-blue-800">My Projects</h2>
-            <span className="h-1 w-16 rounded-full bg-blue-600"></span>
+            <span className="h-1 w-16 rounded-full bg-blue-400"></span>
+            <h2 className="text-4xl font-bold text-white">My Projects</h2>
+            <span className="h-1 w-16 rounded-full bg-blue-400"></span>
           </div>
-          <p className="max-w-2xl mx-auto text-sm text-gray-600 dark:text-gray-300">
-            I build responsive React applications using modern tools like Tailwind CSS, Firebase, and icons from Ant Design.
+          <p className="max-w-2xl mx-auto text-sm text-gray-300">
+            I build responsive React applications using modern tools like
+            Tailwind CSS, Firebase, and icons from Ant Design.
           </p>
         </div>
 
         <div className="mb-8 flex flex-wrap justify-center gap-3">
-          {['ReactJS', 'JavaScript', 'Tailwind', 'Firebase', 'Ant Design Icons'].map((tech) => (
+          {[
+            "ReactJS",
+            "JavaScript",
+            "Tailwind",
+            "Firebase",
+            "Ant Design Icons",
+          ].map((tech) => (
             <span
               key={tech}
-              className="rounded-full border border-blue-200 bg-blue-50/80 px-4 py-2 text-sm font-medium text-blue-700 shadow-sm transition hover:bg-blue-100 dark:border-blue-800 dark:bg-blue-900/30 dark:text-blue-200"
+              className="rounded-full border border-blue-500 bg-blue-900/40 px-4 py-2 text-sm font-medium text-blue-300 shadow-sm transition hover:bg-blue-800/50"
             >
               {tech}
             </span>
@@ -74,18 +85,21 @@ export const Project = () => {
           {projectData.map((project) => (
             <Card
               key={project.title}
-              className="overflow-hidden rounded-3xl border border-slate-200 bg-white/80 shadow-xl transition-transform duration-300 hover:-translate-y-1  hover:shadow-2xl dark:border-slate-700 dark:bg-slate-900/90"
+              className="overflow-hidden rounded-3xl border border-slate-700 shadow-xl transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl"
+              style={{ backgroundColor: "#0d1b3e" }}
               data-aos="zoom-in-up"
-              title={project.title}
+              title={<span className="text-white">{project.title}</span>}
               footer={
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <Button
                     severity="info"
                     size="small"
                     label="View Live"
-                    onClick={() => window.open(project.liveUrl, '_blank')}
+                    onClick={() => window.open(project.liveUrl, "_blank")}
                   />
-                  <span className="text-xs text-slate-500 dark:text-slate-400">Built with {project.built} </span>
+                  <span className="text-xs text-slate-400">
+                    Built with {project.built}
+                  </span>
                 </div>
               }
               header={
@@ -94,18 +108,18 @@ export const Project = () => {
                   preview
                   alt={project.title}
                   src={project.image}
-                  imageClassName="   object-cover h-52 w-full"
+                  imageClassName="object-cover h-52 w-full"
                 />
               }
             >
-              <p className="mb-4 text-sm leading-6 text-slate-700 dark:text-slate-300">
+              <p className="mb-4 text-sm leading-6 text-slate-300">
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-700 dark:bg-slate-800 dark:text-slate-200"
+                    className="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-200"
                   >
                     {tag}
                   </span>
