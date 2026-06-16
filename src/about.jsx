@@ -6,23 +6,26 @@ export const About = () => {
       {/* <div className="h-35"></div> */}
 
       <section id="about" className="bg-[#0a1628]">
-        <div className="flex items-center mb-6">
-          <div className="flex-grow border-t border-blue-600"></div>
-          <h2 className="mx-4 font-bold text-4xl text-blue-400 whitespace-nowrap">
-            About
-          </h2>
-          <div className="flex-grow border-t border-blue-600"></div>
+        <div className="text-center">
+          <div className="inline-flex items-center gap-3 mb-6">
+            <span className="h-1 w-16 bg-blue-400 rounded-full"></span>
+            <h2 className="mx-4 font-bold text-4xl text-white  whitespace-nowrap ">
+              About
+            </h2>
+            <span className="h-1 w-16 bg-blue-400 rounded-full"></span>
+          </div>
         </div>
+
         <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-lg xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
           <Image
-            width="400"
-            imageClassName="rounded-3xl ring-2 ring-gray-300 dark:ring-gray-500"
-            src="./grad.jpg"
+            width="700"
+            // imageClassName="rounded-3xl ring-2 ring-gray-300 dark:ring-gray-500"
+            src="./me.png"
             alt="dashboard image"
             preview
           />
           <div className="mt-4 md:mt-0">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-blue-600">
               Web Developer – Frontend & Full Stack Solutions
             </h2>
             <p className="text-justify mb-6 font-light text-gray-300 md:text-lg">
@@ -38,7 +41,7 @@ export const About = () => {
             </p>
             <a
               href="#contact"
-              className="inline-flex items-center text-black bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
+              className="inline-flex items-center text-blue-400 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
             >
               Get started
               <svg

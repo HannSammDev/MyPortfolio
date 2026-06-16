@@ -33,7 +33,7 @@ export const Home = () => {
             >
               <div className="absolute -left-8 top-4 h-40 w-40 rounded-full bg-sky-500/10 blur-3xl" />
               <div className="absolute -right-6 bottom-8 h-44 w-44 rounded-full bg-fuchsia-500/10 blur-3xl" />
-              <div className="relative overflow-hidden rounded-[2rem] border border-slate-700 bg-slate-950/80 p-4 sm:p-6 shadow-2xl shadow-slate-950/40">
+              <div className="relative overflow-hidden rounded-[2rem] border border-slate-700 bg-slate-950/80 mt-3 p-4 sm:p-6 shadow-2xl shadow-slate-950/40">
                 <div className="relative mx-auto h-[260px] w-[260px] overflow-hidden rounded-full border-4 border-slate-800 bg-slate-900 shadow-xl shadow-sky-500/20 sm:h-80 sm:w-80">
                   <Image
                     src="./profile.jpg"
@@ -71,7 +71,7 @@ export const Home = () => {
                   experiences using React, Tailwind, and Firebase.
                 </p>
               </div>
-              <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3">
+              <div className="  grid gap-3  md:grid-cols-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                 {[
                   "ReactJS",
                   "Tailwind",
@@ -81,7 +81,7 @@ export const Home = () => {
                 ].map((tech) => (
                   <span
                     key={tech}
-                    className="rounded-2xl border border-slate-700 bg-slate-900/70 px-4 py-2 text-sm text-slate-200 shadow-sm shadow-slate-900/50 "
+                    className="   rounded-2xl border border-slate-700 bg-slate-900/70 px-4 py-2 text-sm text-slate-200 shadow-sm shadow-slate-900/50 "
                   >
                     {tech}
                   </span>

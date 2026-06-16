@@ -15,7 +15,7 @@ const projectData = [
       "A polished client-facing portal that showcases services and helps users quickly connect with the business.",
     tech: ["ReactJS", "JavaScript", "Bootstrap", "FontAwesome", "Firebase"],
     liveUrl: "#",
-        built:'React + Boatstrap'
+    built: "React + Boatstrap",
   },
   {
     title: "Demprint's ERP",
@@ -24,17 +24,25 @@ const projectData = [
       "A custom ERP dashboard built for internal business operations with responsive UI and modular components.",
     tech: ["NextJS", "JavaScript", "Tailwind", "MongoDB", "Ant Design Icons"],
     liveUrl: "#",
-    built:'Next + Tailwind'
+    built: "Next + Tailwind",
   },
   {
     title: " Web-based Task Manager",
     image: "./taskf.png",
     description:
       "A task management application designed to help teams organize and track their work efficiently.",
-    tech: ["ReactJS", "JavaScript", "Tailwind","ReactIcons" ,"Firebase"],
+    tech: ["ReactJS", "JavaScript", "Tailwind", "ReactIcons", "Firebase"],
     liveUrl: "#",
-    built:'React + Tailwind'
-
+    built: "React + Tailwind",
+  },
+  {
+    title: "Clinic Appointment Booking System",
+    image: "./healthcare.png",
+    description:
+      "A healthcare web platform for HealthFirst Clinic that allows patients to book appointments, find nearby clinic branches, and access medical services — featuring same-day diagnostics and licensed physicians across multiple locations.",
+    tech: ["ReactJS", "JavaScript", "Tailwind", "Firebase"],
+    liveUrl: "#",
+    built: "React + Tailwind",
   },
 ];
 
@@ -92,9 +100,10 @@ export const Project = () => {
               footer={
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <Button
-                    severity="info"
+                    className="hover:text-blue-300"
+                     style={{ backgroundColor: "#0a0f2c" }}
                     size="small"
-                    label="View Live"
+                    label={<span className="hover:text-blue-300">View Live</span>}
                     onClick={() => window.open(project.liveUrl, "_blank")}
                   />
                   <span className="text-xs text-slate-400">

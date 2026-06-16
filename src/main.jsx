@@ -7,10 +7,13 @@ import "primereact/resources/themes/lara-light-cyan/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import { Layout } from "./layout";
+import { Test } from "./test";
+// import { GeoPage } from "./PortfolioPages";
 
 const App = () => (
   <Router>
     <Routes>
+      {/* <Route path='/landingpage' element ={<GeoPage/>}/> */}
       <Route path="/" element={<Layout />} />
     </Routes>
   </Router>

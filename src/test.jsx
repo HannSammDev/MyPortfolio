@@ -1,10 +1,12 @@
 import React from "react";
+import { ThemeProvider } from "./Darktheme/DarkTheme";
 
 
 export const Test = () => {
   return (
- <div className=" bg-blue-700 py-12">
-    <h1>Hello world</h1>
+ <div className="">
+      {/* <h1>Hello world</h1> */}
+      <ThemeProvider/>
   </div>
   )
  
