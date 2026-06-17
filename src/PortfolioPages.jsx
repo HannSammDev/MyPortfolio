@@ -18,8 +18,12 @@ import {
   ChevronRight,
 } from "lucide-react";
 
-// ─── GEOLOCATION PAGE ───────────────────────────────────────────────────────
-export const GeoPage =() => {
+
+
+export const Landingpage = () => {
+
+  // ─── GEOLOCATION PAGE ───────────────────────────────────────────────────────
+  const GeoPage =() => {
   return (
     <div className="space-y-8">
       {/* Hero */}
@@ -342,7 +346,7 @@ function LandingPage() {
 }
 
 // ─── ROOT APP ────────────────────────────────────────────────────────────────
-export default function App() {
+  function App() {
   const [active, setActive] = useState("geo");
 
   const tabs = [
@@ -390,3 +394,10 @@ export default function App() {
     </div>
   );
 }
+  // return (
+  //   <div>
+  //     <p>none</p>
+  //   </div>
+  // )
+}
+

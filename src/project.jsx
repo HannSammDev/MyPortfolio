@@ -23,7 +23,7 @@ const projectData = [
     description:
       "A custom ERP dashboard built for internal business operations with responsive UI and modular components.",
     tech: ["NextJS", "JavaScript", "Tailwind", "MongoDB", "Ant Design Icons"],
-    liveUrl: "#",
+    liveUrl: "https://demprints.vercel.app/",
     built: "Next + Tailwind",
   },
   {
@@ -32,14 +32,14 @@ const projectData = [
     description:
       "A task management application designed to help teams organize and track their work efficiently.",
     tech: ["ReactJS", "JavaScript", "Tailwind", "ReactIcons", "Firebase"],
-    liveUrl: "#",
+    liveUrl: "https://webbase-task-management.vercel.app/",
     built: "React + Tailwind",
   },
   {
     title: "Clinic Appointment Booking System",
     image: "./healthcare.png",
     description:
-      "A healthcare web platform for HealthFirst Clinic that allows patients to book appointments, find nearby clinic branches, and access medical services — featuring same-day diagnostics and licensed physicians across multiple locations.",
+      "HealthFirst Clinic — book appointments, find branches, and access medical services. ",
     tech: ["ReactJS", "JavaScript", "Tailwind", "Firebase"],
     liveUrl: "#",
     built: "React + Tailwind",

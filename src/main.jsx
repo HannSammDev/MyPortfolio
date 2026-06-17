@@ -8,13 +8,14 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import { Layout } from "./layout";
 import { Test } from "./test";
-// import { GeoPage } from "./PortfolioPages";
+import {Landingpage } from "./PortfolioPages";
 
 const App = () => (
   <Router>
     <Routes>
-      {/* <Route path='/landingpage' element ={<GeoPage/>}/> */}
+      <Route path='/landingpage' element ={<Landingpage/>}/>
       <Route path="/" element={<Layout />} />
+
     </Routes>
   </Router>
 );

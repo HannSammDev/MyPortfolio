@@ -17,13 +17,15 @@ export const About = () => {
         </div>
 
         <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-lg xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-          <Image
-            width="700"
-            // imageClassName="rounded-3xl ring-2 ring-gray-300 dark:ring-gray-500"
-            src="./me.png"
+          <img
+            // width="500"
+            style={{ height: "80%" }}
+            className="rounded-3xl ring-2 ring-gray-300 dark:ring-gray-500"
+            src="./internpic.jpg"
             alt="dashboard image"
             preview
           />
+
           <div className="mt-4 md:mt-0">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-blue-600">
               Web Developer – Frontend & Full Stack Solutions
