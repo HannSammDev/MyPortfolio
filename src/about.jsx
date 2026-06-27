@@ -7,9 +7,9 @@ export const About = () => {
 
       <section id="about" className="bg-[#0a1628]">
         <div className="text-center">
-          <div className="inline-flex items-center gap-3 mb-6">
+          <div className="inline-flex items-center gap-3 mb-1">
             <span className="h-1 w-16 bg-blue-400 rounded-full"></span>
-            <h2 className="mx-4 font-bold text-4xl text-white  whitespace-nowrap ">
+            <h2 className="mx-1 font-bold text-4xl text-white  whitespace-nowrap ">
               About
             </h2>
             <span className="h-1 w-16 bg-blue-400 rounded-full"></span>
@@ -26,7 +26,7 @@ export const About = () => {
             preview
           />
 
-          <div className="mt-4 md:mt-0">
+          <div className="mt-1 md:mt-0">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-blue-600">
               Web Developer – Frontend & Full Stack Solutions
             </h2>

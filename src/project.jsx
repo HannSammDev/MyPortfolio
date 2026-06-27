@@ -28,7 +28,7 @@ const projectData = [
   },
   {
     title: " Web-based Task Manager",
-    image: "./taskf.png",
+    image: "./tsk.png",
     description:
       "A task management application designed to help teams organize and track their work efficiently.",
     tech: ["ReactJS", "JavaScript", "Tailwind", "ReactIcons", "Firebase"],

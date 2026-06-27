@@ -11,14 +11,15 @@ export const Layout = () => {
     return (
       <>
         <ScrollTop
-          className="d-flex justify-center align-center bg-blue-500 text-white rounded-full shadow-lg"
+          className="d-flex justify-center align-center bg-blue-500 text-white  shadow-lg"
           style={{
             width: "2.5rem",
             height: "2.5rem",
-            backgroundColor: "blue",
+            backgroundColor: " rgb(3, 3, 78)",
             display: "flex",
             alignItems: "center",
             justifyItems: "center",
+            
           }}
         />
         <MainPage />

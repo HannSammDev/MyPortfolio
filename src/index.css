@@ -6,6 +6,8 @@ html{
 }
 section {
   scroll-margin-top: 80px;
+  width: 100%;
+
 }
 @import "tailwindcss";
 /* 

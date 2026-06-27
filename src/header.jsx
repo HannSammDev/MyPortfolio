@@ -63,23 +63,23 @@ export const MainPage = () => {
                 : "text-white bg-slate-900/40 hover:bg-gray-300"
             }`}
           >
-            <FiMenu className="h-6 w-6" />
+            <FiMenu className="h-6 w-6 hover:text-black" />
           </button>
 
           <div
-            className={`w-full transition-all duration-300 lg:flex lg:w-auto lg:items-center ${
+            className={`  w-full transition-all duration-300 lg:flex lg:w-auto lg:items-center ${
               isOpen
                 ? "block bg-slate-950/95 shadow-xl shadow-slate-950/40 lg:bg-transparent lg:shadow-none"
                 : "hidden"
             }`}
           >
-            <ul className="mt-4 flex flex-col gap-2 rounded-3xl  bg-slate-950/95 p-4 text-sm font-medium shadow-xl shadow-slate-950/40 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
+            <ul className="mt-4 flex flex-col  gap-2 rounded-3xl  bg-slate-950/95 p-4 text-sm font-medium shadow-xl shadow-slate-950/40 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
               {navItems.map((item) => (
-                <li key={item.href}>
+                <li key={item.href} >
                   <a
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className={`block rounded-lg px-3 py-2 transition-all duration-200 ${
+                    className={` block rounded-lg px-3 py-2 transition-all duration-200 ${
                       hash === item.href
                         ? "bg-sky-500/20 text-sky-500"
                         : navWhite
