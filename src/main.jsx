@@ -3,6 +3,11 @@ import * as ReactDOM from "react-dom/client"; // ← this is required
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import "flowbite";
+// AOS
+import "aos/dist/aos.css";
+import "animate.css";
+
+//PRIMEREACT
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";

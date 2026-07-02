@@ -2,8 +2,7 @@
 import { Image } from 'primereact/image';
 import { Button } from "primereact/button";
 import AOS from "aos";
-import 'aos/dist/aos.css';
-import 'animate.css';
+
 import { useEffect } from "react";
 import { Card } from 'primereact/card';
 
@@ -41,8 +40,9 @@ const projectData = [
     description:
       "HealthFirst Clinic — book appointments, find branches, and access medical services. ",
     tech: ["ReactJS", "JavaScript", "Tailwind", "Firebase"],
-    liveUrl: "#",
+    // liveUrl: "https://health-care-rho-eight.vercel.app/",
     built: "React + Tailwind",
+    button: "SOON"
   },
 ];
 
@@ -103,7 +103,7 @@ export const Project = () => {
                     className="hover:text-blue-300"
                      style={{ backgroundColor: "#0a0f2c" }}
                     size="small"
-                    label={<span className="hover:text-blue-300">View Live</span>}
+                    label={<span className="hover:text-blue-300">{ project.button ?? "View Live" }</span>}
                     onClick={() => window.open(project.liveUrl, "_blank")}
                   />
                   <span className="text-xs text-slate-400">
